@@ -5,9 +5,9 @@ import pickle
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Salmon Health Prediction App
+# Trout Health Prediction
 """)
-st.sidebar.header('User Input Features')
+#st.sidebar.header('User Input Features')
 
 #st.sidebar.markdown("""
 #[Example CSV input file](example.csv)
@@ -20,19 +20,19 @@ if uploaded_file is not None:
 else:
     def user_input_features():
         
-        ALT = st.sidebar.slider('ALT', 0.0,500.0,14.0)
-        ALP = st.sidebar.slider('ALP', 2.0,2205.0,600.0)
-        AST = st.sidebar.slider('AST', -5.0,500.0,100.0)
-        ALB = st.sidebar.slider('ALB', 1.0,34.0,10.0)
-        LDH = st.sidebar.slider('LDH', 1.0,4240.0,100.0)
-        CK = st.sidebar.slider('CK', 4.0,51606.0,100.0)
-        CK_MB = st.sidebar.slider('CK MB', 20.0,377132.0,100.0)
-        ALDO = st.sidebar.slider('ALDO', -5.0,930.0,100.0)
-        CREA = st.sidebar.slider('CREA', 6.0,640.0,200.0)
-        P= st.sidebar.slider('P', 0.2,26.0,12.0)
-        CO2= st.sidebar.slider('CO2', 0.2,26.0,10.0)
-        AMM= st.sidebar.slider('AMM', 85.0,3018.0,100.0)
-        NA_K= st.sidebar.slider('NA/K', 55.0,876.0,100.0)
+       # ALT = st.sidebar.slider('ALT', 0.0,500.0,14.0)
+        #ALP = st.sidebar.slider('ALP', 2.0,2205.0,600.0)
+        #AST = st.sidebar.slider('AST', -5.0,500.0,100.0)
+        #ALB = st.sidebar.slider('ALB', 1.0,34.0,10.0)
+        #LDH = st.sidebar.slider('LDH', 1.0,4240.0,100.0)
+        #CK = st.sidebar.slider('CK', 4.0,51606.0,100.0)
+        #CK_MB = st.sidebar.slider('CK MB', 20.0,377132.0,100.0)
+        #ALDO = st.sidebar.slider('ALDO', -5.0,930.0,100.0)
+       # CREA = st.sidebar.slider('CREA', 6.0,640.0,200.0)
+        #P= st.sidebar.slider('P', 0.2,26.0,12.0)
+        #CO2= st.sidebar.slider('CO2', 0.2,26.0,10.0)
+        #AMM= st.sidebar.slider('AMM', 85.0,3018.0,100.0)
+        #NA_K= st.sidebar.slider('NA/K', 55.0,876.0,100.0)
         data = {'ALT':ALT,
                 'ALP':ALP,
                 'AST':AST,
