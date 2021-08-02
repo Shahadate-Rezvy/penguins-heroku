@@ -9,9 +9,9 @@ st.write("""
 """)
 st.sidebar.header('User Input Features')
 
-st.sidebar.markdown("""
-[Example CSV input file](example.csv)
-""")
+#st.sidebar.markdown("""
+#[Example CSV input file](example.csv)
+#""")
 
 # Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
@@ -84,5 +84,5 @@ st.subheader('Prediction')
 salmon_health = np.array(['HEALTHY','UNHEALTHY'])
 st.write(salmon_health[prediction])
 
-st.subheader('Prediction Probability')
-st.write(prediction_proba)
+#st.subheader('Prediction Probability')
+#st.write(prediction_proba)
