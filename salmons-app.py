@@ -15,10 +15,10 @@ st.write("""
 
 # Collects user input features into dataframe
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-input_df = pd.read_csv(uploaded_file)
-#if uploaded_file is not None:
-    
-#else:
+
+if uploaded_file is not None:
+    input_df = pd.read_csv(uploaded_file)   
+else:
    # def user_input_features():
         
        # ALT = st.sidebar.slider('ALT', 0.0,500.0,14.0)
@@ -49,8 +49,8 @@ input_df = pd.read_csv(uploaded_file)
                 #'NA/K':NA_K}
         #features = pd.DataFrame(data, index=[0])
         #return features
-   # input_df = user_input_features()
-
+    #input_df = user_input_features()
+    input_df = 0
 
 # Combines user input features with entire penguins dataset
 # This will be useful for the encoding phase
