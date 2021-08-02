@@ -33,21 +33,21 @@ else:
         #CO2= st.sidebar.slider('CO2', 0.2,26.0,10.0)
         #AMM= st.sidebar.slider('AMM', 85.0,3018.0,100.0)
         #NA_K= st.sidebar.slider('NA/K', 55.0,876.0,100.0)
-        data = {'ALT':ALT,
-                'ALP':ALP,
-                'AST':AST,
-                'ALB':ALB,
-                'LDH':LDH,
-                'CK':CK,
-                'CK':CK_MB,
-                'ALDO':ALDO,
-                'CREA':CREA,
-                'P':P,
-                'CO2':CO2,
-                'AMM':AMM,
-                'NA/K':NA_K}
-        features = pd.DataFrame(data, index=[0])
-        return features
+        #data = {'ALT':ALT,
+                #'ALP':ALP,
+               # 'AST':AST,
+               # 'ALB':ALB,
+               # 'LDH':LDH,
+                #'CK':CK,
+                #'CK':CK_MB,
+                #'ALDO':ALDO,
+                #'CREA':CREA,
+                #'P':P,
+                #'CO2':CO2,
+                #'AMM':AMM,
+                #'NA/K':NA_K}
+        #features = pd.DataFrame(data, index=[0])
+        #return features
     input_df = user_input_features()
 
 
